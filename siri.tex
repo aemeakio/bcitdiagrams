@@ -1,0 +1,23 @@
+\documentclass[11pt]{article}
+
+% \usepackage{provisorium}
+
+\begin{document}
+
+  \begin{tabular}{|l|l|l|c|}\hline
+    \textbf{parameter} & \begin{tabular}{l} \textbf{sampling} \\ \textbf{distribution} \end{tabular} & \textbf{requirements} & \textbf{test statistic} \\ \hline
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\ 
+    proportion $p$     & normal $z$            & $np\geq{}5$ and $nq\geq{}5$ & $\displaystyle z=\frac{\hat{p}-p}{\sqrt{\frac{pq}{n}}}$ \\
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\ \hline
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\
+    mean $\mu$         & Student $t$           & $\sigma$ not known, $\bar{x}$ normal &  $\displaystyle t=\frac{\bar{x}-\mu}{\frac{s}{\sqrt{n}}}$ \\
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\ \hline
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\
+    mean $\mu$         & normal $z$           & $\sigma$ known, $\bar{x}$ normal &  $\displaystyle z=\frac{\bar{x}-\mu}{\frac{\sigma}{\sqrt{n}}}$ \\
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\ \hline
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\
+    variance $\sigma^{2}$         & chi-square $\chi^{2}$           & $x$ normal &  $\displaystyle \chi^{2}=\frac{(n-1)s^{2}}{\sigma^{2}}$ \\
+\hspace{.5in} & \hspace{.5in} & \hspace{.5in} & \hspace{.5in} \\ \hline
+  \end{tabular}
+
+\end{document}
